@@ -1,0 +1,15 @@
+@id = 65fe5cdce0daf3310e3aa30f
+@name = 
+@number = 
+
+PUT http://localhost:3001/api/persons/{{id}} HTTP/1.1
+content-type: application/json
+
+{
+    "name": "{{name}}",
+    "number": "{{number}}"
+}
+
+###
+
+GET http://localhost:3001/api/persons HTTP/1.1

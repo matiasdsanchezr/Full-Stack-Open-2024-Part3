@@ -1,0 +1,26 @@
+@name = Matias Sanchez
+@number = 3834939393
+
+POST http://localhost:3001/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "{{name}}",
+    "number": "{{number}}"
+}
+
+###
+@name2 = Damian Romero
+@number2 = 3834433443
+
+POST http://localhost:3001/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "{{name2}}",
+    "number": "{{number2}}"
+}
+
+###
+
+GET http://localhost:3001/api/persons HTTP/1.1
